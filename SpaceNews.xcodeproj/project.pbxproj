@@ -15,6 +15,8 @@
 		2BA23D87237D98C600158A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA23D86237D98C600158A0B /* Assets.xcassets */; };
 		2BA23D8A237D98C600158A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA23D88237D98C600158A0B /* LaunchScreen.storyboard */; };
 		2BA23D95237D98C700158A0B /* SpaceNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D94237D98C700158A0B /* SpaceNewsUITests.swift */; };
+		2BA23DA0237DA26C00158A0B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D9F237DA26C00158A0B /* ListViewController.swift */; };
+		2BA23DA4237ED4D700158A0B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23DA3237ED4D700158A0B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		2BA23D90237D98C700158A0B /* SpaceNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA23D94237D98C700158A0B /* SpaceNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsUITests.swift; sourceTree = "<group>"; };
 		2BA23D96237D98C700158A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA23D9F237DA26C00158A0B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		2BA23DA3237ED4D700158A0B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +88,11 @@
 				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
 				2BA23D7C237D98C100158A0B /* SceneDelegate.swift */,
 				2BA23D7E237D98C100158A0B /* ViewController.swift */,
+				2BA23D9F237DA26C00158A0B /* ListViewController.swift */,
 				2BA23D80237D98C100158A0B /* Main.storyboard */,
-				2BA23D86237D98C600158A0B /* Assets.xcassets */,
 				2BA23D88237D98C600158A0B /* LaunchScreen.storyboard */,
+				2BA23DA3237ED4D700158A0B /* Model.swift */,
+				2BA23D86237D98C600158A0B /* Assets.xcassets */,
 				2BA23D8B237D98C600158A0B /* Info.plist */,
 				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
 			);
@@ -206,6 +212,8 @@
 				2BA23D7F237D98C100158A0B /* ViewController.swift in Sources */,
 				2BA23D7B237D98C100158A0B /* AppDelegate.swift in Sources */,
 				2BA23D7D237D98C100158A0B /* SceneDelegate.swift in Sources */,
+				2BA23DA4237ED4D700158A0B /* Model.swift in Sources */,
+				2BA23DA0237DA26C00158A0B /* ListViewController.swift in Sources */,
 				2BA23D85237D98C100158A0B /* SpaceNews.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

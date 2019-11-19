@@ -21,7 +21,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Run"/>
                                 <connections>
-                                    <action selector="run:" destination="ZFY-6w-ea9" eventType="touchUpInside" id="br7-6g-In3"/>
+                                    <action selector="run:" destination="ZFY-6w-ea9" eventType="touchUpInside" id="vLy-LA-hoS"/>
+                                    <segue destination="jtF-nS-KLY" kind="show" id="imi-7W-Del"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,10 +85,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="YX9-Xr-mE2">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K6t-U4-zkS"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K6t-U4-zkS">
+                            <connections>
+                                <action selector="cancelAction:" destination="xz2-fB-ahK" id="Df3-M5-aS5"/>
+                                <segue destination="KBy-gD-Yiv" kind="unwind" unwindAction="cancelAction:" id="vvh-Fs-lvR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WA-WA-3R7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="KBy-gD-Yiv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-230.43478260869566" y="136.60714285714286"/>
         </scene>
