@@ -9,7 +9,7 @@
 
 import UIKit
 
-class NASAdatCell: UITableViewCell {
+class NASAdataCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     
