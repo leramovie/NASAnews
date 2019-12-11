@@ -8,19 +8,12 @@
 
 import UIKit
 import SwiftyJSON
-
+import SDWebImage
 
 
 class ListViewController: UITableViewController {
-  
-   // let json = JSON(jsonObject)
 
-//    var myJSON = [Items]()
-//    var nasaCollection = [Collection]()
-   
-    //let titleLabel1 = ["First", "Second", "third"]
     var itemsArr = [NasaData]()
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +23,23 @@ class ListViewController: UITableViewController {
 
       func downloadJSON() {
 
-        let url = URL(string: "https://images-api.nasa.gov/search?q=earth")
+        let url = URL(string: "https://images-api.nasa.gov/search?q=space&media_type=image&year_start=2019&year_end=2019")
         guard let downloadURL = url else {return}
         
             let session = URLSession.shared
             session.dataTask(with: downloadURL) { data, response, error in
                           guard let data = data else {return}
                           do{
-                            //self.myJSON = [try JSONDecoder().decode(Items.self, from: data)]
                               let myJSON = try JSON(data: data)
                             let items = myJSON["collection"]["items"]
                             
                               for item in items.arrayValue {
                                 var title = item["data"][0]["title"].stringValue
-                                self.itemsArr.append(NasaData(nasa_id: "", title: title, date_created: "", media_type: ""))
+                                var date_created = item["data"][0]["date_created"].stringValue
+                                var nasa_id = item["data"][0]["nasa_id"].stringValue
+                                
+                                var href = item["links"][0]["href"].stringValue
+                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href))
                               }
                             
                             DispatchQueue.main.async {
@@ -54,45 +50,43 @@ class ListViewController: UITableViewController {
                             }catch{
                                 print(error)
                             }
-                        }.resume()
-                                       
-                            //return nasaItems
-                            //for i in 0...50{
-                            //}
-                    //for i in 0...50{}
-                            //self.titleItem = [myJson.collection?.items[1]?.data[0]?.title]
-                            //print ("Title: \(myJSON.collection?.items[i]?.data[0]?.title)")
-                         
+                        }.resume()                         
           }
 
-//    struct NasaData: Codable {
-//        var center: String?
-//        var nasa_id: String?
-//        var title: String?
-//        var date_created: String?
-//        //var keywords: [String]?
-//        var media_type: String?
-//
-//            init(center: String, nasa_id: String, title: String, date_created: String, media_type: String) {
-//                self.center = center
-//                self.nasa_id = nasa_id
-//                self.title = title
-//                self.date_created = date_created
-//                self.media_type = media_type
-//            }
-//
-//    }
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return itemsArr.count
         }
 
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NASACell") as! NASAdataCell
+            let imageCellFrame = cell.imageCell?.frame
+
+            
+
             cell.titleLabel?.text = itemsArr[indexPath.row].title
-            //"Title: " + data[indexPath.row].title
+            cell.date_createdLabel?.text = itemsArr[indexPath.row].date_created
+            cell.imageCell?.sd_setImage(with: URL(string: itemsArr[indexPath.row].href!), placeholderImage: UIImage(named: itemsArr[indexPath.row].href!)
+            )
+            //let imageCrop = cell.imageCell.getCropRatio()
+//            cell.imageCell?.layer.cornerRadius = 85/2
+//            cell.imageCell?.clipsToBounds = true
+//            cell.imageCell?.frame = CGRect(x: (imageCellFrame?.origin.x)!,y: (imageCellFrame?.origin.y)! + 1,width: 100,height: 100)
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+            
+            //cell.imageView?.frame = CGRect(x: 0,y: 0,width: self.imageCellFrame.width,height: self.imageCellFrame.height)
+//            let dateCreated = itemsArr[indexPath.row].date_created
+//            let dateFormatter = DateFormatter()
+//            dateFormatter.dateFormat = "MMMM yyyy"
+//            return dateFormatter.string(from: dateCreated)
+            
+            func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+                return 85
+            }
+            
             return cell
         }
-
 
 }
 

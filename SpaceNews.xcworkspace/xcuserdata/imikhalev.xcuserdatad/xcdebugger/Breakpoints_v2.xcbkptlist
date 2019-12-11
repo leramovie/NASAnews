@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0BFA1D7F-7CC6-497B-BBF3-681BFA85BAD1"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5327797A-BE7B-4A3C-B5B7-4DC36A910FFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceNews/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceNews/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - 40e85a9ac17b96b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.titleText.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - 851d640508ef66a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.titleText.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - fca6af21ce43bab0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.titleText.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - 14a3dd231cfd83f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.titleText.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - 9bb03e934b60e34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SpaceNews.DetailViewController"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "B4FBA4CC-C2BE-4212-B365-72E42767E339 - 14d1cfceaab2f22b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceNews.DetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SpaceNews.DetailViewController&gt;"
+                  moduleName = "SpaceNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imikhalev/Documents/MyProject/NASAnews/SpaceNews/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "99">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28770980-5CD3-47BF-A665-C8409EABEAE4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceNews/NASAdataCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "NASAdataCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -3,23 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11293D3BDFB1BEEC74F5A408 /* Pods_SpaceNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DAA5D52942C276A7D0D823 /* Pods_SpaceNews.framework */; };
 		2B31C75F23880A380002D2EE /* NASAdataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31C75E23880A380002D2EE /* NASAdataCell.swift */; };
-		2B31C76323880E2D0002D2EE /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31C76223880E2D0002D2EE /* Object.swift */; };
+		2B31C76323880E2D0002D2EE /* NasaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31C76223880E2D0002D2EE /* NasaData.swift */; };
+		2B52D0C9239E0E8A00AFB840 /* launcher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D0C8239E0E8A00AFB840 /* launcher.jpg */; };
+		2B52D0CB239E2BF000AFB840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */; };
 		2BA23D7B237D98C100158A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D7A237D98C100158A0B /* AppDelegate.swift */; };
 		2BA23D7D237D98C100158A0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D7C237D98C100158A0B /* SceneDelegate.swift */; };
-		2BA23D7F237D98C100158A0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D7E237D98C100158A0B /* ViewController.swift */; };
+		2BA23D7F237D98C100158A0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D7E237D98C100158A0B /* DetailViewController.swift */; };
 		2BA23D82237D98C100158A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA23D80237D98C100158A0B /* Main.storyboard */; };
 		2BA23D85237D98C100158A0B /* SpaceNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */; };
-		2BA23D87237D98C600158A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA23D86237D98C600158A0B /* Assets.xcassets */; };
-		2BA23D8A237D98C600158A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA23D88237D98C600158A0B /* LaunchScreen.storyboard */; };
 		2BA23D95237D98C700158A0B /* SpaceNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D94237D98C700158A0B /* SpaceNewsUITests.swift */; };
 		2BA23DA0237DA26C00158A0B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23D9F237DA26C00158A0B /* ListViewController.swift */; };
-		2BA23DA4237ED4D700158A0B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA23DA3237ED4D700158A0B /* Model.swift */; };
+		2BB0D38C238D330800D9931F /* Boston-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BB0D38B238D330700D9931F /* Boston-Light.ttf */; };
+		2BB0D3EF239A552900D9931F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB0D3EE239A552900D9931F /* Assets.xcassets */; };
 		2BE22306238431EA00BACB67 /* NASAApiCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE22305238431E900BACB67 /* NASAApiCLient.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,21 +36,23 @@
 
 /* Begin PBXFileReference section */
 		2B31C75E23880A380002D2EE /* NASAdataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAdataCell.swift; sourceTree = "<group>"; };
-		2B31C76223880E2D0002D2EE /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		2B31C76223880E2D0002D2EE /* NasaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaData.swift; sourceTree = "<group>"; };
+		2B52D0C8239E0E8A00AFB840 /* launcher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launcher.jpg; path = ../../../../Downloads/launcher.jpg; sourceTree = "<group>"; };
+		2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA23D77237D98C100158A0B /* SpaceNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA23D7A237D98C100158A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA23D7C237D98C100158A0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BA23D7E237D98C100158A0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BA23D7E237D98C100158A0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2BA23D81237D98C100158A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BA23D84237D98C100158A0B /* SpaceNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceNews.xcdatamodel; sourceTree = "<group>"; };
-		2BA23D86237D98C600158A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BA23D89237D98C600158A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA23D8B237D98C600158A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BA23D90237D98C700158A0B /* SpaceNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA23D94237D98C700158A0B /* SpaceNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsUITests.swift; sourceTree = "<group>"; };
 		2BA23D96237D98C700158A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BA23D9F237DA26C00158A0B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		2BA23DA3237ED4D700158A0B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2BB0D38B238D330700D9931F /* Boston-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Boston-Light.ttf"; path = "../../../../Library/Fonts/Boston-Light.ttf"; sourceTree = "<group>"; };
+		2BB0D3E523915E9800D9931F /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB0D3EE239A552900D9931F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Desktop/SpaceNews/SpaceNews/SpaceNews/Assets.xcassets; sourceTree = "<group>"; };
 		2BE22305238431E900BACB67 /* NASAApiCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAApiCLient.swift; sourceTree = "<group>"; };
 		66DAA5D52942C276A7D0D823 /* Pods_SpaceNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930192648634C3E05E8437A1 /* Pods-SpaceNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceNews.debug.xcconfig"; path = "Target Support Files/Pods-SpaceNews/Pods-SpaceNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,16 +103,17 @@
 			children = (
 				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
 				2BA23D7C237D98C100158A0B /* SceneDelegate.swift */,
-				2BA23D7E237D98C100158A0B /* ViewController.swift */,
 				2BA23D9F237DA26C00158A0B /* ListViewController.swift */,
+				2BA23D7E237D98C100158A0B /* DetailViewController.swift */,
 				2B31C75E23880A380002D2EE /* NASAdataCell.swift */,
-				2B31C76223880E2D0002D2EE /* Object.swift */,
+				2B31C76223880E2D0002D2EE /* NasaData.swift */,
 				2BA23D80237D98C100158A0B /* Main.storyboard */,
-				2BA23D88237D98C600158A0B /* LaunchScreen.storyboard */,
-				2BA23DA3237ED4D700158A0B /* Model.swift */,
-				2BA23D86237D98C600158A0B /* Assets.xcassets */,
+				2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */,
 				2BA23D8B237D98C600158A0B /* Info.plist */,
+				2BB0D3EE239A552900D9931F /* Assets.xcassets */,
 				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
+				2B52D0C8239E0E8A00AFB840 /* launcher.jpg */,
+				2BB0D38B238D330700D9931F /* Boston-Light.ttf */,
 				2BE22305238431E900BACB67 /* NASAApiCLient.swift */,
 			);
 			path = SpaceNews;
@@ -127,6 +131,7 @@
 		9D7C3166E3FDBE74FAC85620 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BB0D3E523915E9800D9931F /* SDWebImage.framework */,
 				66DAA5D52942C276A7D0D823 /* Pods_SpaceNews.framework */,
 			);
 			name = Frameworks;
@@ -138,7 +143,6 @@
 				930192648634C3E05E8437A1 /* Pods-SpaceNews.debug.xcconfig */,
 				ADCA128618F2C6817099BA90 /* Pods-SpaceNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA23D8A237D98C600158A0B /* LaunchScreen.storyboard in Resources */,
-				2BA23D87237D98C600158A0B /* Assets.xcassets in Resources */,
+				2B52D0C9239E0E8A00AFB840 /* launcher.jpg in Resources */,
+				2BB0D38C238D330800D9931F /* Boston-Light.ttf in Resources */,
+				2BB0D3EF239A552900D9931F /* Assets.xcassets in Resources */,
+				2B52D0CB239E2BF000AFB840 /* LaunchScreen.storyboard in Resources */,
 				2BA23D82237D98C100158A0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,14 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE22306238431EA00BACB67 /* NASAApiCLient.swift in Sources */,
-				2BA23D7F237D98C100158A0B /* ViewController.swift in Sources */,
+				2BA23D7F237D98C100158A0B /* DetailViewController.swift in Sources */,
 				2BA23D7B237D98C100158A0B /* AppDelegate.swift in Sources */,
 				2BA23D7D237D98C100158A0B /* SceneDelegate.swift in Sources */,
-				2BA23DA4237ED4D700158A0B /* Model.swift in Sources */,
 				2BA23DA0237DA26C00158A0B /* ListViewController.swift in Sources */,
 				2B31C75F23880A380002D2EE /* NASAdataCell.swift in Sources */,
 				2BA23D85237D98C100158A0B /* SpaceNews.xcdatamodeld in Sources */,
-				2B31C76323880E2D0002D2EE /* Object.swift in Sources */,
+				2B31C76323880E2D0002D2EE /* NasaData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,14 +329,6 @@
 				2BA23D81237D98C100158A0B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2BA23D88237D98C600158A0B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BA23D89237D98C600158A0B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,9 +453,12 @@
 			baseConfigurationReference = 930192648634C3E05E8437A1 /* Pods-SpaceNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = ../../../Desktop/SpaceNews/SpaceNews/SpaceNews/Assets.xcassets/;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
 				INFOPLIST_FILE = SpaceNews/Info.plist;
+				INSTALL_OWNER = valery;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lera.SpaceNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -475,9 +475,12 @@
 			baseConfigurationReference = ADCA128618F2C6817099BA90 /* Pods-SpaceNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = ../../../Desktop/SpaceNews/SpaceNews/SpaceNews/Assets.xcassets/;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
 				INFOPLIST_FILE = SpaceNews/Info.plist;
+				INSTALL_OWNER = valery;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,7 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lera.SpaceNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
