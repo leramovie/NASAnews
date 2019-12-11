@@ -91,7 +91,7 @@
                                     <outlet property="date_createdLabel" destination="pd8-aI-LXm" id="lfH-Th-wME"/>
                                     <outlet property="imageCell" destination="gwp-d3-C9I" id="5d2-Pp-ahL"/>
                                     <outlet property="titleLabel" destination="m5t-PA-I2Z" id="iZ5-ft-yUV"/>
-                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSeque" id="uNk-un-qeI"/>
+                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSegue" id="uNk-un-qeI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -74,14 +74,16 @@ class ListViewController: UITableViewController {
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "detailSegue" {
+//        if segue.identifier == "detailSegue" {
+//            print("Ага определил сигвей по id")
             if let indexPath = self.tableView.indexPathForSelectedRow{
+                print("Тут")
                 let selectedRow = indexPath.row
                let dvc = segue.destination as! DetailViewController
                 dvc.titleText = self.itemsArr[selectedRow].title
             }
              
-        }
+        
     }
 
 }
