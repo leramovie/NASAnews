@@ -13,15 +13,21 @@ class DetailViewController: UIViewController {
 
     var titleText: String!
     var imageURL: String!
+    var abstract: String!
     
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var abstractLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         guard let titleLabel = titleLabel else {return}
         titleLabel.text = titleText
+        
+        guard let abstractLabel = abstractLabel else {return}
+        abstractLabel.text = abstract
+        
         self.imageCell.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"), options: SDWebImageOptions(), completed: { (image, error, cacheType, imageURL) -> Void in
             print("loaded")
         })

@@ -37,9 +37,10 @@ class ListViewController: UITableViewController {
                                 var title = item["data"][0]["title"].stringValue
                                 var date_created = item["data"][0]["date_created"].stringValue
                                 var nasa_id = item["data"][0]["nasa_id"].stringValue
-                                
+                                 var description = item["data"][0]["description"].stringValue
                                 var href = item["links"][0]["href"].stringValue
-                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href))
+                               
+                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href, description: description))
                               }
                             
                             DispatchQueue.main.async {
@@ -74,17 +75,15 @@ class ListViewController: UITableViewController {
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        if segue.identifier == "detailSegue" {
-//            print("Ага определил сигвей по id")
             if let indexPath = self.tableView.indexPathForSelectedRow{
-                print("Тут")
                 let selectedRow = indexPath.row
-               let dvc = segue.destination as! DetailViewController
-                dvc.titleText = self.itemsArr[selectedRow].title
-                dvc.imageURL = self.itemsArr[indexPath.row].href
+                let dvc = segue.destination as! DetailViewController
+                    dvc.titleText = self.itemsArr[selectedRow].title
+                    dvc.imageURL = self.itemsArr[indexPath.row].href
+                    dvc.abstract = self.itemsArr[indexPath.row].description
+                print(itemsArr[indexPath.row].description)
+                
             }
-             
-        
     }
 
 }

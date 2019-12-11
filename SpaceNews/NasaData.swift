@@ -17,14 +17,16 @@ import UIKit
                     //var keywords: [String]?
                     var media_type: String?
                     var href: String?
+                    var description: String?
                     
-                    init(nasa_id: String, title: String, date_created: String, media_type: String, href: String) {
+                    init(nasa_id: String, title: String, date_created: String, media_type: String, href: String, description: String) {
                             //self.center = center
                             self.href = href
                             self.nasa_id = nasa_id
                             self.title = title
                             self.date_created = date_created
                             self.media_type = media_type
+                            self.description = description
                         }
                     
                 }
