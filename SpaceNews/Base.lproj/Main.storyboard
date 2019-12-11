@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Boston-Light.ttf">
+            <string>BostonLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="6D1-hQ-q7a">
@@ -17,8 +22,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +58,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="date_created" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-aI-LXm">
                                             <rect key="frame" x="138" y="11.5" width="251" height="26.5"/>
-                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="13"/>
                                             <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -66,8 +71,8 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="titleLabel" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5t-PA-I2Z">
                                             <rect key="frame" x="138" y="16" width="251" height="74"/>
-                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                            <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -91,7 +96,7 @@
                                     <outlet property="date_createdLabel" destination="pd8-aI-LXm" id="lfH-Th-wME"/>
                                     <outlet property="imageCell" destination="gwp-d3-C9I" id="5d2-Pp-ahL"/>
                                     <outlet property="titleLabel" destination="m5t-PA-I2Z" id="iZ5-ft-yUV"/>
-                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSegue" id="uNk-un-qeI"/>
+                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSegue" animates="NO" id="uNk-un-qeI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -114,43 +119,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-f1-sSu">
+                                <rect key="frame" x="8" y="96" width="398" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="398" id="Elm-Uu-Oa3"/>
+                                    <constraint firstAttribute="height" constant="93" id="POO-yd-auc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-xV-tq4">
-                                <rect key="frame" x="0.0" y="191" width="414" height="341"/>
+                                <rect key="frame" x="0.0" y="244" width="414" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="341" id="2T2-1i-ko9"/>
                                     <constraint firstAttribute="width" constant="414" id="n2s-rN-byu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-f1-sSu">
-                                <rect key="frame" x="8" y="96" width="398" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-Fk-cye">
+                                <rect key="frame" x="8" y="593" width="398" height="295"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-0F-4fi">
-                                <rect key="frame" x="8" y="540" width="414" height="348"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ugd-0F-4fi" firstAttribute="trailing" secondItem="pRb-Hw-31H" secondAttribute="trailing" constant="8" id="0ue-iq-MRs"/>
-                            <constraint firstItem="nEy-xV-tq4" firstAttribute="top" secondItem="vLe-f1-sSu" secondAttribute="bottom" constant="67.5" id="P76-19-sqi"/>
-                            <constraint firstItem="vLe-f1-sSu" firstAttribute="leading" secondItem="pRb-Hw-31H" secondAttribute="leading" constant="8" id="RBi-oa-MSK"/>
-                            <constraint firstAttribute="bottom" secondItem="Ugd-0F-4fi" secondAttribute="bottom" constant="8" id="XwG-Os-WEv"/>
-                            <constraint firstItem="nEy-xV-tq4" firstAttribute="trailing" secondItem="pRb-Hw-31H" secondAttribute="trailing" id="cT4-6M-kq8"/>
-                            <constraint firstItem="Ugd-0F-4fi" firstAttribute="top" secondItem="nEy-xV-tq4" secondAttribute="bottom" constant="8" id="iHx-xD-bx2"/>
-                            <constraint firstItem="nEy-xV-tq4" firstAttribute="leading" secondItem="pRb-Hw-31H" secondAttribute="leading" id="jPY-rt-0bD"/>
-                            <constraint firstItem="vLe-f1-sSu" firstAttribute="top" secondItem="pRb-Hw-31H" secondAttribute="top" constant="8" id="ouX-jD-cYA"/>
-                            <constraint firstItem="Ugd-0F-4fi" firstAttribute="leading" secondItem="pRb-Hw-31H" secondAttribute="leading" constant="8" id="swB-zI-rVF"/>
-                            <constraint firstItem="pRb-Hw-31H" firstAttribute="trailing" secondItem="vLe-f1-sSu" secondAttribute="trailing" constant="8" id="u4F-47-gGZ"/>
+                            <constraint firstAttribute="bottom" secondItem="EI8-Fk-cye" secondAttribute="bottom" constant="8" id="1EF-Yv-5eB"/>
+                            <constraint firstItem="vLe-f1-sSu" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" constant="8" id="RBi-oa-MSK"/>
+                            <constraint firstItem="W0d-SM-g5h" firstAttribute="trailing" secondItem="EI8-Fk-cye" secondAttribute="trailing" constant="8" id="aTe-PY-iV6"/>
+                            <constraint firstItem="nEy-xV-tq4" firstAttribute="top" secondItem="vLe-f1-sSu" secondAttribute="bottom" constant="55" id="bP5-wU-zfj"/>
+                            <constraint firstItem="nEy-xV-tq4" firstAttribute="trailing" secondItem="W0d-SM-g5h" secondAttribute="trailing" id="cT4-6M-kq8"/>
+                            <constraint firstItem="EI8-Fk-cye" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" constant="8" id="hZQ-wT-x8a"/>
+                            <constraint firstItem="nEy-xV-tq4" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" id="jPY-rt-0bD"/>
+                            <constraint firstItem="vLe-f1-sSu" firstAttribute="top" secondItem="W0d-SM-g5h" secondAttribute="top" constant="8" id="ouX-jD-cYA"/>
+                            <constraint firstItem="EI8-Fk-cye" firstAttribute="top" secondItem="nEy-xV-tq4" secondAttribute="bottom" constant="8" id="r7m-ke-Czl"/>
+                            <constraint firstItem="W0d-SM-g5h" firstAttribute="trailing" secondItem="vLe-f1-sSu" secondAttribute="trailing" constant="8" id="u4F-47-gGZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pRb-Hw-31H"/>
+                        <viewLayoutGuide key="safeArea" id="W0d-SM-g5h"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oh8-Rt-0LR" customClass="Det"/>
                     <connections>
-                        <outlet property="abstractLabel" destination="Ugd-0F-4fi" id="v7C-Xp-RhB"/>
+                        <outlet property="descriptionTextVIew" destination="EI8-Fk-cye" id="wGZ-CX-N5q"/>
                         <outlet property="imageCell" destination="nEy-xV-tq4" id="fFt-tl-7TU"/>
                         <outlet property="titleLabel" destination="vLe-f1-sSu" id="dS7-Ax-Jck"/>
                     </connections>
@@ -160,4 +169,5 @@
             <point key="canvasLocation" x="728.98550724637687" y="130.58035714285714"/>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
 </document>

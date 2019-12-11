@@ -17,7 +17,9 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var abstractLabel: UILabel!
+    //@IBOutlet weak var abstractLabel: UILabel!
+    
+    @IBOutlet weak var descriptionTextVIew: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,8 @@ class DetailViewController: UIViewController {
         guard let titleLabel = titleLabel else {return}
         titleLabel.text = titleText
         
-        guard let abstractLabel = abstractLabel else {return}
-        abstractLabel.text = abstract
+        guard let descriptionTextVIew = descriptionTextVIew else {return}
+        descriptionTextVIew.text = abstract
         
         self.imageCell.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"), options: SDWebImageOptions(), completed: { (image, error, cacheType, imageURL) -> Void in
             print("loaded")
