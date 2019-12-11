@@ -7,26 +7,25 @@
 //
 import SwiftyJSON
 import UIKit
+import SDWebImage
 
 class DetailViewController: UIViewController {
 
     var titleText: String!
+    var imageURL: String!
     
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    
-//    func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        if segue.identifier == "detailSeque" {
-//            if let indexPath =
-//
-//        }
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         guard let titleLabel = titleLabel else {return}
         titleLabel.text = titleText
+        self.imageCell.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"), options: SDWebImageOptions(), completed: { (image, error, cacheType, imageURL) -> Void in
+            print("loaded")
+        })
+        
         
     }
     

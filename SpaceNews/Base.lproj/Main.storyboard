@@ -121,7 +121,7 @@
                                     <constraint firstAttribute="height" constant="341" id="RxV-uD-Ppi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-f1-sSu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-f1-sSu">
                                 <rect key="frame" x="5" y="678" width="404" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="3hg-GD-pDN"/>

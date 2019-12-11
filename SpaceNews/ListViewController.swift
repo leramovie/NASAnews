@@ -81,6 +81,7 @@ class ListViewController: UITableViewController {
                 let selectedRow = indexPath.row
                let dvc = segue.destination as! DetailViewController
                 dvc.titleText = self.itemsArr[selectedRow].title
+                dvc.imageURL = self.itemsArr[indexPath.row].href
             }
              
         
