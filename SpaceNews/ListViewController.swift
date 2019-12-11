@@ -74,8 +74,14 @@ class ListViewController: UITableViewController {
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        guard let dvc = segue.destination as? DetailViewController else {return}
-        dvc.titleText = itemsArr[indexPath.row].title
+        if segue.identifier == "detailSegue" {
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let selectedRow = indexPath.row
+               let dvc = segue.destination as! DetailViewController
+                dvc.titleText = self.itemsArr[selectedRow].title
+            }
+             
+        }
     }
 
 }
