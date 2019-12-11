@@ -101,8 +101,6 @@
 		2BA23D79237D98C100158A0B /* SpaceNews */ = {
 			isa = PBXGroup;
 			children = (
-				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
-				2BA23D7C237D98C100158A0B /* SceneDelegate.swift */,
 				2BA23D9F237DA26C00158A0B /* ListViewController.swift */,
 				2BA23D7E237D98C100158A0B /* DetailViewController.swift */,
 				2B31C75E23880A380002D2EE /* NASAdataCell.swift */,
@@ -114,6 +112,8 @@
 				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
 				2B52D0C8239E0E8A00AFB840 /* launcher.jpg */,
 				2BB0D38B238D330700D9931F /* Boston-Light.ttf */,
+				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
+				2BA23D7C237D98C100158A0B /* SceneDelegate.swift */,
 				2BE22305238431E900BACB67 /* NASAApiCLient.swift */,
 			);
 			path = SpaceNews;

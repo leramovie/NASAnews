@@ -61,33 +61,25 @@ class ListViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NASACell") as! NASAdataCell
             let imageCellFrame = cell.imageCell?.frame
 
-            
-
             cell.titleLabel?.text = itemsArr[indexPath.row].title
             cell.date_createdLabel?.text = itemsArr[indexPath.row].date_created
             cell.imageCell?.sd_setImage(with: URL(string: itemsArr[indexPath.row].href!), placeholderImage: UIImage(named: itemsArr[indexPath.row].href!)
             )
-            //let imageCrop = cell.imageCell.getCropRatio()
-//            cell.imageCell?.layer.cornerRadius = 85/2
-//            cell.imageCell?.clipsToBounds = true
-//            cell.imageCell?.frame = CGRect(x: (imageCellFrame?.origin.x)!,y: (imageCellFrame?.origin.y)! + 1,width: 100,height: 100)
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-            
-            //cell.imageView?.frame = CGRect(x: 0,y: 0,width: self.imageCellFrame.width,height: self.imageCellFrame.height)
-//            let dateCreated = itemsArr[indexPath.row].date_created
-//            let dateFormatter = DateFormatter()
-//            dateFormatter.dateFormat = "MMMM yyyy"
-//            return dateFormatter.string(from: dateCreated)
-            
+
             func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
                 return 85
             }
             
             return cell
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        guard let dvc = segue.destination as? DetailViewController else {return}
+        dvc.titleText = itemsArr[indexPath.row].title
+    }
 
 }
 
 
+
+   
