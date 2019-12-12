@@ -18,8 +18,9 @@ import UIKit
                     var media_type: String?
                     var href: String?
                     var description: String?
+                    var date_created_sort: Date?
                     
-                    init(nasa_id: String, title: String, date_created: String, media_type: String, href: String, description: String) {
+                    init(nasa_id: String, title: String, date_created: String, media_type: String, href: String, description: String, date_created_sort: Date) {
                             //self.center = center
                             self.href = href
                             self.nasa_id = nasa_id
@@ -27,6 +28,7 @@ import UIKit
                             self.date_created = date_created
                             self.media_type = media_type
                             self.description = description
+                            self.date_created_sort = date_created_sort
                         }
                     
                 }

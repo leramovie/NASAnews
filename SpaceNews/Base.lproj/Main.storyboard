@@ -58,7 +58,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="date_created" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-aI-LXm">
                                             <rect key="frame" x="138" y="11.5" width="251" height="26.5"/>
-                                            <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="17"/>
                                             <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>

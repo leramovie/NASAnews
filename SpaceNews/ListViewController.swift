@@ -32,34 +32,34 @@ class ListViewController: UITableViewController {
             let session = URLSession.shared
             session.dataTask(with: downloadURL) { data, response, error in
                           guard let data = data else {return}
-                          do{
-                              let myJSON = try JSON(data: data)
-                            let items = myJSON["collection"]["items"]
-                            
-                              for item in items.arrayValue {
-                                let title = item["data"][0]["title"].stringValue
-                                let nasa_id = item["data"][0]["nasa_id"].stringValue
-                                let description = item["data"][0]["description"].stringValue
-                                let href = item["links"][0]["href"].stringValue
-                                var date_created = item["data"][0]["date_created"].stringValue
-
-                                let dateFormatter = DateFormatter()
-                                let date = Date()
-
-                                //dateFormatter.locale = Locale(identifier: "en_US")
-                                //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-                                dateFormatter.dateFormat = "MMM dd"
-
-                                date_created = dateFormatter.string(from: date_created)
-                               
-                           
-                              
-                               
-                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href, description: description))
-                              }
-                            
+                         do{
+                                                        let myJSON = try JSON(data: data)
+                                                      let items = myJSON["collection"]["items"]
+                                                      
+                                                        for item in items.arrayValue {
+                                                          let title = item["data"][0]["title"].stringValue
+                                                          let nasa_id = item["data"][0]["nasa_id"].stringValue
+                                                          let description = item["data"][0]["description"].stringValue
+                                                          let href = item["links"][0]["href"].stringValue
+                                                          var date_created = item["data"][0]["date_created"].stringValue
+                                                       
+                                                          let dateFormatter = DateFormatter()
+                                                          dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+                                                          var date = dateFormatter.date(from: date_created)
+                                                          
+                                                          let uiDateFormatter = DateFormatter()
+                                                          uiDateFormatter.dateFormat = "dd MMM, yyyy"
+                                                          let uiDate = uiDateFormatter.string(from: date!)
+                                                     
+                          //                                dateFormatter.dateFormat = "DD MMM, YYYY"
+                          //                                date_created = dateFormatter.string(from: date!)
+                                                         
+                                                          self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: uiDate, media_type: "", href: href, description: description, date_created_sort: date!))
+                                                        }
+                                                      
+                                                      self.itemsArr.sort(by: { $0.date_created_sort! > $1.date_created_sort! } )
 //                            var sortedItems = self.itemsArr.sorted(by: { UIContentSizeCategory(rawValue: $0.date_created!) > UIContentSizeCategory(rawValue: $1.date_created!) })
-//
+
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
                             }
