@@ -130,16 +130,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-xV-tq4">
-                                <rect key="frame" x="0.0" y="244" width="414" height="341"/>
+                                <rect key="frame" x="0.0" y="189" width="414" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="341" id="2T2-1i-ko9"/>
                                     <constraint firstAttribute="width" constant="414" id="n2s-rN-byu"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EI8-Fk-cye">
-                                <rect key="frame" x="8" y="593" width="398" height="295"/>
+                                <rect key="frame" x="8" y="538" width="398" height="350"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -147,7 +147,7 @@
                             <constraint firstAttribute="bottom" secondItem="EI8-Fk-cye" secondAttribute="bottom" constant="8" id="1EF-Yv-5eB"/>
                             <constraint firstItem="vLe-f1-sSu" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" constant="8" id="RBi-oa-MSK"/>
                             <constraint firstItem="W0d-SM-g5h" firstAttribute="trailing" secondItem="EI8-Fk-cye" secondAttribute="trailing" constant="8" id="aTe-PY-iV6"/>
-                            <constraint firstItem="nEy-xV-tq4" firstAttribute="top" secondItem="vLe-f1-sSu" secondAttribute="bottom" constant="55" id="bP5-wU-zfj"/>
+                            <constraint firstItem="nEy-xV-tq4" firstAttribute="top" secondItem="vLe-f1-sSu" secondAttribute="bottom" id="bP5-wU-zfj"/>
                             <constraint firstItem="nEy-xV-tq4" firstAttribute="trailing" secondItem="W0d-SM-g5h" secondAttribute="trailing" id="cT4-6M-kq8"/>
                             <constraint firstItem="EI8-Fk-cye" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" constant="8" id="hZQ-wT-x8a"/>
                             <constraint firstItem="nEy-xV-tq4" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" id="jPY-rt-0bD"/>

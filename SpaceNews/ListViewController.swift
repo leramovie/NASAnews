@@ -15,6 +15,9 @@ class ListViewController: UITableViewController {
 
     var itemsArr = [NasaData]()
     
+    //var dateFormatter = DateFormatter()
+    //dateFormatter.dateFormat = "dd MM, yyyy"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadJSON()
@@ -35,13 +38,18 @@ class ListViewController: UITableViewController {
                             
                               for item in items.arrayValue {
                                 var title = item["data"][0]["title"].stringValue
+                                var dateFormatter = DateFormatter()
+                                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
                                 var date_created = item["data"][0]["date_created"].stringValue
+                                date_created = dateFormatter.date(from: date_created)
                                 var nasa_id = item["data"][0]["nasa_id"].stringValue
                                  var description = item["data"][0]["description"].stringValue
                                 var href = item["links"][0]["href"].stringValue
                                
                                 self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href, description: description))
                               }
+                            
+                            var sortedItems = self.itemsArr.sorted(by: { UIContentSizeCategory(rawValue: $0.date_created!) > UIContentSizeCategory(rawValue: $1.date_created!) })
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
