@@ -37,20 +37,30 @@ class ListViewController: UITableViewController {
                             let items = myJSON["collection"]["items"]
                             
                               for item in items.arrayValue {
-                                var title = item["data"][0]["title"].stringValue
-                                var dateFormatter = DateFormatter()
-                                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-                                var date_created = item["data"][0]["date_created"].stringValue
-                                date_created = dateFormatter.date(from: date_created)
-                                var nasa_id = item["data"][0]["nasa_id"].stringValue
-                                 var description = item["data"][0]["description"].stringValue
-                                var href = item["links"][0]["href"].stringValue
+                                let title = item["data"][0]["title"].stringValue
+                                let nasa_id = item["data"][0]["nasa_id"].stringValue
+                                let description = item["data"][0]["description"].stringValue
+                                let href = item["links"][0]["href"].stringValue
+                                let date_created = item["data"][0]["date_created"].stringValue
+
+                                let dateFormatter = DateFormatter()
+                                let date = Date(timeIntervalSinceReferenceDate: 410220000)
+
+                                //dateFormatter.locale = Locale(identifier: "en_US")
+                                //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+                                dateFormatter.dateFormat = "MMM dd"
+                                var someDateTime = dateFormatter.string(from: date)
+
+                                //date_created = dateFormatter.date(from: date_created)
                                
-                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href, description: description))
+                           
+                              
+                               
+                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: someDateTime, media_type: "", href: href, description: description))
                               }
                             
-                            var sortedItems = self.itemsArr.sorted(by: { UIContentSizeCategory(rawValue: $0.date_created!) > UIContentSizeCategory(rawValue: $1.date_created!) })
-                            
+//                            var sortedItems = self.itemsArr.sorted(by: { UIContentSizeCategory(rawValue: $0.date_created!) > UIContentSizeCategory(rawValue: $1.date_created!) })
+//
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
                             }
@@ -89,7 +99,7 @@ class ListViewController: UITableViewController {
                     dvc.titleText = self.itemsArr[selectedRow].title
                     dvc.imageURL = self.itemsArr[indexPath.row].href
                     dvc.abstract = self.itemsArr[indexPath.row].description
-                print(itemsArr[indexPath.row].description)
+               // print(itemsArr[indexPath.row].description)
                 
             }
     }
