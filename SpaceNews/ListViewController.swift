@@ -41,22 +41,21 @@ class ListViewController: UITableViewController {
                                 let nasa_id = item["data"][0]["nasa_id"].stringValue
                                 let description = item["data"][0]["description"].stringValue
                                 let href = item["links"][0]["href"].stringValue
-                                let date_created = item["data"][0]["date_created"].stringValue
+                                var date_created = item["data"][0]["date_created"].stringValue
 
                                 let dateFormatter = DateFormatter()
-                                let date = Date(timeIntervalSinceReferenceDate: 410220000)
+                                let date = Date()
 
                                 //dateFormatter.locale = Locale(identifier: "en_US")
                                 //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
                                 dateFormatter.dateFormat = "MMM dd"
-                                var someDateTime = dateFormatter.string(from: date)
 
-                                //date_created = dateFormatter.date(from: date_created)
+                                date_created = dateFormatter.string(from: date_created)
                                
                            
                               
                                
-                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: someDateTime, media_type: "", href: href, description: description))
+                                self.itemsArr.append(NasaData(nasa_id: nasa_id, title: title, date_created: date_created, media_type: "", href: href, description: description))
                               }
                             
 //                            var sortedItems = self.itemsArr.sorted(by: { UIContentSizeCategory(rawValue: $0.date_created!) > UIContentSizeCategory(rawValue: $1.date_created!) })
