@@ -14,7 +14,6 @@ class DetailViewController: UIViewController {
     var titleText: String!
     var imageURL: String!
     var abstract: String!
-    var nasaid: String!
     
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

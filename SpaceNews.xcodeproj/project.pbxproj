@@ -10,7 +10,6 @@
 		11293D3BDFB1BEEC74F5A408 /* Pods_SpaceNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DAA5D52942C276A7D0D823 /* Pods_SpaceNews.framework */; };
 		2B31C75F23880A380002D2EE /* NASAdataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31C75E23880A380002D2EE /* NASAdataCell.swift */; };
 		2B31C76323880E2D0002D2EE /* NasaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B31C76223880E2D0002D2EE /* NasaData.swift */; };
-		2B52D0CB239E2BF000AFB840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */; };
 		2B52D0FA23A11A9100AFB840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D0F923A11A9100AFB840 /* Assets.xcassets */; };
 		2B52D10023A24A4500AFB840 /* Boston-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D0FF23A24A3100AFB840 /* Boston-Light.ttf */; };
 		2B52D10323A3ACED00AFB840 /* GreetingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D10223A3ACED00AFB840 /* GreetingScreen.storyboard */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		2B31C75E23880A380002D2EE /* NASAdataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAdataCell.swift; sourceTree = "<group>"; };
 		2B31C76223880E2D0002D2EE /* NasaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaData.swift; sourceTree = "<group>"; };
-		2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B52D0F923A11A9100AFB840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SpaceNews/Assets.xcassets; sourceTree = "<group>"; };
 		2B52D0FF23A24A3100AFB840 /* Boston-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boston-Light.ttf"; sourceTree = "<group>"; };
 		2B52D10123A39CFC00AFB840 /* SpaceNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpaceNews.entitlements; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				2B31C75E23880A380002D2EE /* NASAdataCell.swift */,
 				2B31C76223880E2D0002D2EE /* NasaData.swift */,
 				2BA23D80237D98C100158A0B /* Main.storyboard */,
-				2B52D0CA239E2BF000AFB840 /* LaunchScreen.storyboard */,
 				2BA23D8B237D98C600158A0B /* Info.plist */,
 				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
 				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
@@ -181,7 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B52D0CB239E2BF000AFB840 /* LaunchScreen.storyboard in Resources */,
 				2BA23D82237D98C100158A0B /* Main.storyboard in Resources */,
 				2B52D10323A3ACED00AFB840 /* GreetingScreen.storyboard in Resources */,
 				2B52D10023A24A4500AFB840 /* Boston-Light.ttf in Resources */,
