@@ -33,4 +33,13 @@ class DetailViewController: UIViewController {
             print("loaded")
         })
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        DispatchQueue.global(qos: .background).async {
+            
+            DispatchQueue.main.async {
+                self.descriptionTextVIew.contentOffset.y = -self.descriptionTextVIew.contentInset.top
+            }}
+    }
 }
