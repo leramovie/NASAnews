@@ -2,7 +2,7 @@
 //  NASAdata.swift
 //  SpaceNews
 //
-//  Created by Lera on 22.11.2019.
+//  Created by Parakluence on 22.11.2019.
 //  Copyright © 2019 Parakluence. All rights reserved.
 //
 
