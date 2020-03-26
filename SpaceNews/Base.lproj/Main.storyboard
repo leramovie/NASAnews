@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Roo-D0-K12">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Roo-D0-K12">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -98,7 +99,7 @@
                                     <outlet property="date_createdLabel" destination="pd8-aI-LXm" id="lfH-Th-wME"/>
                                     <outlet property="imageCell" destination="gwp-d3-C9I" id="5d2-Pp-ahL"/>
                                     <outlet property="titleLabel" destination="m5t-PA-I2Z" id="iZ5-ft-yUV"/>
-                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSegue" animates="NO" id="uNk-un-qeI"/>
+                                    <segue destination="pKE-uH-dVz" kind="show" identifier="detailSegue" id="uNk-un-qeI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -132,6 +133,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="BostonLight" family="Boston" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" lookupSuggestion="YES"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-f1-sSu">
                                 <rect key="frame" x="10" y="98" width="394" height="33"/>
@@ -140,6 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nEy-xV-tq4" firstAttribute="top" secondItem="vLe-f1-sSu" secondAttribute="bottom" constant="10" id="2a4-KU-bYF"/>
                             <constraint firstItem="vLe-f1-sSu" firstAttribute="leading" secondItem="W0d-SM-g5h" secondAttribute="leading" constant="10" id="LUU-9P-99B"/>
