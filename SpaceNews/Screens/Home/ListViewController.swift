@@ -11,7 +11,7 @@ import SwiftyJSON
 import SDWebImage
 
 
-class ListViewController: UITableViewController {
+final class ListViewController: UITableViewController {
 
     var itemsArr = [NasaData]()
     
@@ -20,10 +20,13 @@ class ListViewController: UITableViewController {
         downloadJSON()
     }
  
+    private func downloadJSON() {
 
-    func downloadJSON() {
+        let date = Date()
+        let calendar = Calendar.current
+        let weekday = calendar.component(.year, from: date)
 
-        let url = URL(string: "https://images-api.nasa.gov/search?q=space&media_type=image&year_start=2019&year_end=2019")
+        let url = URL(string: "https://images-api.nasa.gov/search?q=space&media_type=image&year_start=2019&year_end=\(weekday)")
         guard let downloadURL = url else {return}
         let session = URLSession.shared
         session.dataTask(with: downloadURL) { data, response, error in

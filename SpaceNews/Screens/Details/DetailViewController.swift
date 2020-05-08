@@ -9,7 +9,7 @@ import SwiftyJSON
 import UIKit
 import SDWebImage
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
 
     var titleText: String!
     var imageURL: String!

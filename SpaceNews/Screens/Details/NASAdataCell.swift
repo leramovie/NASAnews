@@ -9,7 +9,7 @@
 
 import UIKit
 
-class NASAdataCell: UITableViewCell {
+final class NASAdataCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var date_createdLabel: UILabel!
