@@ -84,18 +84,10 @@
 		2BA23D79237D98C100158A0B /* SpaceNews */ = {
 			isa = PBXGroup;
 			children = (
-				2B52D10123A39CFC00AFB840 /* SpaceNews.entitlements */,
-				2B52D0FE23A24A3000AFB840 /* Fonts */,
-				2BA23D9F237DA26C00158A0B /* ListViewController.swift */,
-				2BA23D7E237D98C100158A0B /* DetailViewController.swift */,
-				2B31C75E23880A380002D2EE /* NASAdataCell.swift */,
-				2B31C76223880E2D0002D2EE /* NasaData.swift */,
-				2BA23D80237D98C100158A0B /* Main.storyboard */,
-				2BA23D8B237D98C600158A0B /* Info.plist */,
-				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
 				2BA23D7A237D98C100158A0B /* AppDelegate.swift */,
 				2BA23D7C237D98C100158A0B /* SceneDelegate.swift */,
-				2B52D10223A3ACED00AFB840 /* GreetingScreen.storyboard */,
+				F97414E4246570C400D6FBEE /* Screens */,
+				F97414EB246571E500D6FBEE /* Supporting files */,
 			);
 			path = SpaceNews;
 			sourceTree = "<group>";
@@ -116,6 +108,54 @@
 				ADCA128618F2C6817099BA90 /* Pods-SpaceNews.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F97414E4246570C400D6FBEE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F97414E5246570D000D6FBEE /* Greeting */,
+				F97414E6246570E100D6FBEE /* Home */,
+				F97414E7246570F400D6FBEE /* Details */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F97414E5246570D000D6FBEE /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				2B52D10223A3ACED00AFB840 /* GreetingScreen.storyboard */,
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
+		F97414E6246570E100D6FBEE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BA23D9F237DA26C00158A0B /* ListViewController.swift */,
+				2BA23D80237D98C100158A0B /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F97414E7246570F400D6FBEE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				2B31C76223880E2D0002D2EE /* NasaData.swift */,
+				2BA23D7E237D98C100158A0B /* DetailViewController.swift */,
+				2B31C75E23880A380002D2EE /* NASAdataCell.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		F97414EB246571E500D6FBEE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2B52D10123A39CFC00AFB840 /* SpaceNews.entitlements */,
+				2BA23D83237D98C100158A0B /* SpaceNews.xcdatamodeld */,
+				2B52D0FE23A24A3000AFB840 /* Fonts */,
+				2BA23D8B237D98C600158A0B /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = SpaceNews/Assets.xcassets;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
-				INFOPLIST_FILE = SpaceNews/Info.plist;
+				INFOPLIST_FILE = "SpaceNews/Supporting files/Info.plist";
 				INSTALL_OWNER = valery;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = SpaceNews/Assets.xcassets;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
-				INFOPLIST_FILE = SpaceNews/Info.plist;
+				INFOPLIST_FILE = "SpaceNews/Supporting files/Info.plist";
 				INSTALL_OWNER = valery;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
