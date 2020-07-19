@@ -40,11 +40,11 @@ final class ListViewController: UITableViewController {
                         let nasa_id = item["data"][0]["nasa_id"].stringValue
                         let description = item["data"][0]["description"].stringValue
                         let href = item["links"][0]["href"].stringValue
-                        var date_created = item["data"][0]["date_created"].stringValue
+                        let date_created = item["data"][0]["date_created"].stringValue
                                                        
                         let dateFormatter = DateFormatter()
                         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-                        var date = dateFormatter.date(from: date_created)
+                        let date = dateFormatter.date(from: date_created)
                                                           
                         let uiDateFormatter = DateFormatter()
                         uiDateFormatter.dateFormat = "dd MMM, yyyy"

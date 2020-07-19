@@ -418,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_ENTITLEMENTS = SpaceNews/SpaceNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = SpaceNews/Assets.xcassets;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
@@ -443,7 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_ENTITLEMENTS = SpaceNews/SpaceNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = SpaceNews/Assets.xcassets;
 				DEVELOPMENT_TEAM = 489JK8PZ4S;
